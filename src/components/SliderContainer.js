@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { movies } from "./movies";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./SliderContainer.css";
 
 export default class SimpleSlider extends React.Component {
   render() {
@@ -25,7 +26,7 @@ export default class SimpleSlider extends React.Component {
 
     return (
       <Slider {...settings}>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -36,7 +37,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -47,7 +48,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -62,7 +63,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -77,7 +78,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -92,7 +93,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -107,7 +108,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -122,7 +123,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
@@ -137,7 +138,7 @@ export default class SimpleSlider extends React.Component {
             </NavLink>
           </h3>
         </div>
-        <div>
+        <div className="zoom">
           <h3>
             <NavLink
               to={{
