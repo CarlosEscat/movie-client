@@ -4,10 +4,15 @@ import { Route } from "react-router-dom";
 import ButtonListContainer from "./components/ButtonListContainer";
 import TestingReactPlayer from "./components/TestingReactPlayer";
 import SimpleSlider from "./components/SliderContainer";
+//import Spinner from "react-bootstrap/Spinner";
 
 function App() {
   return (
     <div className="App">
+      <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+        rel="stylesheet"
+      ></link>
       <header className="header-video">
         <ButtonListContainer />
       </header>

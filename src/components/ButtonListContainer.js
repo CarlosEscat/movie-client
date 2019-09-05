@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+// import Dropdown from "react-bootstrap/Dropdown";
+// import DropdownButton from "react-bootstrap/DropdownButton";
+//import Image from "react-bootstrap/Image";
+import "./ButtonListContainer.css";
 
 export default class ButtonListContainer extends Component {
   render() {
@@ -21,25 +25,34 @@ export default class ButtonListContainer extends Component {
       padding: 1rem 1.5rem;
       font-size: 1.5rem;
     }
+
+
     `}
         </style>
-        <label className="movie-header">Movie App</label>
+        <section className="movie-header">Movie App</section>
+        <br />
 
-        <Button variant="flat" size="xxl">
+        {/* <Button variant="flat" size="xxl">
           flat button
         </Button>
-        <NavLink to="/signup">
-          <label style={style}>Sign Up</label>
-        </NavLink>
-        <NavLink to="/login">
-          <label style={style}>Log In</label>
-        </NavLink>
-        <NavLink to="/event">
-          <label style={style}>Movies</label>
-        </NavLink>
-        {/* <NavLink to="/event/editTicket">
-          <label style={style}>User</label>
-        </NavLink> */}
+        <Button variant="outline-primary">Primary</Button> */}
+        <section className="list">
+          <NavLink to="/">
+            <label style={style}>Home</label>
+          </NavLink>
+          <NavLink to="/">
+            <label style={style}>Trailers</label>
+          </NavLink>
+          <NavLink to="/">
+            <label style={style}>TV Shows</label>
+          </NavLink>
+          <NavLink to="/">
+            <label style={style}>Documentaries</label>
+          </NavLink>
+          <NavLink to="/">
+            <label style={style}>Sports</label>
+          </NavLink>
+        </section>
       </div>
     );
   }
